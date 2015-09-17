@@ -1,0 +1,40 @@
+{
+    "name": "rollerworks/metadata-doctrine-cache",
+    "description": "Doctrine Cache adapter for the Rollerworks Metadata Component",
+    "keywords": ["rollerworks", "metadata", "doctrine", "cache"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sebastiaan Stok",
+            "email": "s.stok@rollercapes.net"
+        },
+        {
+            "name": "Community contributions",
+            "homepage": "https://github.com/Rollerworks/metadata-doctrine-cache/contributors"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "rollerworks/metadata": "^0.4",
+        "doctrine/cache": "^1.4.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Rollerworks\\Component\\Metadata\\Cache\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Rollerworks\\Component\\Metadata\\Tests\\Cache\\": [
+                "tests/",
+                "vendor/rollerworks/metadata/tests/Cache"
+            ]
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
